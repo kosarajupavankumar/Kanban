@@ -1,0 +1,189 @@
+:root {
+  --pink: lightpink;
+  --blue: lightblue;
+  --purple: purple;
+  --green: lightgreen;
+  --light: #f0f0f0;
+  --dark: black;
+  --red: red;
+}
+
+.toolbox {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  color: white;
+  align-items: center;
+}
+
+.toolbox-priority {
+  display: flex;
+  width: 20rem;
+  height: 70%;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #393c3f;
+}
+
+.color {
+  height: 2rem;
+  width: 3.5rem;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.light {
+  background-color: var(--light);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.red {
+  color: var(--red);
+}
+
+.action-btn {
+  width: 10rem;
+  height: 70%;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.add_button,
+.delete_button {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.heading_content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--dark);
+  padding: 3rem;
+}
+
+.heading_pending {
+  width: 70%;
+}
+.heading_finished {
+  width: 30%;
+}
+
+.container_wrapper {
+  display: flex;
+}
+
+.pending_count {
+  width: 70%;
+  border-right: 2px solid black;
+}
+
+.finished_count {
+  width: 30%;
+}
+
+.container {
+  min-height: 800px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket_container {
+  height: 15rem;
+  width: 18rem;
+  background-color: #ecf0f1;
+  position: relative;
+}
+
+.ticket_color {
+  height: 15%;
+  /* background-color: var(--pink); */
+  text-align: center;
+}
+
+.ticket_id {
+  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.ticket_area {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.lock_unlock {
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.model_container {
+  /* display: flex; */
+  display: none;
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  height: 50vh;
+  width: 50vw;
+  box-shadow: 10px 10px 40px -5px black;
+}
+
+.textarea_container {
+  height: 100%;
+  width: 80%;
+  font-size: 2rem;
+  resize: none;
+  padding: 2rem;
+}
+
+.priority_color_container {
+  height: 100%;
+  width: 25%;
+  background-color: black;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+.priority_color {
+  height: 4rem;
+  width: 5rem;
+}
+
+.active {
+  border: 5px solid white;
+}
